@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for extension 'rgsmoothgallery'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pi1_title">bitsGallery - Gallery Switch</label>
+			<label index="pi1_plus_wiz_description">This extension provides you the jquery galleries galleryview 2.0 and galleria 1.0b. The extensions uses the lib/div MVC framework. You can easily select different controllers for different galleries via flexform. Also you can easily extend the extension by defining your own controllers.</label>
+			
+      
+            			
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="pi1_title">bitsGallery - Gallery Switch</label>
+			<label index="pi1_plus_wiz_description">This extension provides you the jquery galleries galleryview 2.0 and galleria 1.0b. The extensions uses the lib/div MVC framework. You can easily select different controllers for different galleries via flexform. Also you can easily extend the extension by defining your own controllers.</label>
+			
+ 
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<mainSheet>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle></sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<controller>
+						<TCEforms>
+							<label>LLL:EXT:bitsgallery/locallang_db.xml:flexform.controllerSelection</label>
+							<config>
+								<type>select</type>
+									<items type="array">
+ 										<numIndex index="0" type="array">
+											<numIndex index="0">LLL:EXT:bitsgallery/locallang_db.xml:flexform.controllerSelection.galleryView</numIndex>
+											<numIndex index="1">galleryView</numIndex>
+										</numIndex>
+										<numIndex index="1" type="array">
+											<numIndex index="0">LLL:EXT:bitsgallery/locallang_db.xml:flexform.controllerSelection.galleria</numIndex>
+											<numIndex index="1">galleria</numIndex>
+										</numIndex>
+								</items>
+ 							</config>
+						</TCEforms>
+					</controller>
+					<mode>
+						<TCEforms>
+							<label>LLL:EXT:bitsgallery/locallang_db.xml:flexform.chooseMode</label>
+							<config>
+								<type>select</type>
+									<items type="array">
+ 										<numIndex index="0" type="array">
+											<numIndex index="0">LLL:EXT:bitsgallery/locallang_db.xml:flexform.chooseMode.directory</numIndex>
+											<numIndex index="1">DIRECTORY</numIndex>
+										</numIndex>
+										<numIndex index="1" type="array">
+											<numIndex index="0">LLL:EXT:bitsgallery/locallang_db.xml:flexform.chooseMode.records</numIndex>
+											<numIndex index="1">RECORDS</numIndex>
+										</numIndex>
+								</items>
+ 							</config>
+						</TCEforms>
+					</mode>
+					
+					
+					
+										
+					<imgDirectory>
+							<TCEforms>
+									<displayCond>FIELD:mode:!IN:RECORDS,DAM,DAMCAT</displayCond>
+									<label>LLL:EXT:bitsgallery/locallang_db.xml:flexform.imgDirectory</label>
+									<config>
+											<type>input</type>
+											<size>25</size>
+											<eval>trim</eval>
+									</config>
+							</TCEforms>
+					</imgDirectory>
+					
+					
+					
+					<panel_width>
+							<TCEforms>
+									<displayCond>FIELD:controller:!IN:galleria</displayCond>
+									<label>LLL:EXT:bitsgallery/locallang_db.xml:flexform.panel_width</label>
+									<config>
+											<type>input</type>
+											<size>25</size>
+											<eval>trim</eval>
+									</config>
+							</TCEforms>
+					</panel_width>
+					<panel_height>
+							<TCEforms>
+									<displayCond>FIELD:controller:!IN:galleria</displayCond>
+									<label>LLL:EXT:bitsgallery/locallang_db.xml:flexform.panel_height</label>
+									<config>
+											<type>input</type>
+											<size>25</size>
+											<eval>trim</eval>
+									</config>
+							</TCEforms>
+					</panel_height>
+					<frame_width>
+							<TCEforms>
+									<displayCond>FIELD:controller:!IN:galleria</displayCond>
+									<label>LLL:EXT:bitsgallery/locallang_db.xml:flexform.frame_width</label>
+									<config>
+											<type>input</type>
+											<size>25</size>
+											<eval>trim</eval>
+									</config>
+							</TCEforms>
+					</frame_width>
+					<frame_height>
+							<TCEforms>
+									<displayCond>FIELD:controller:!IN:galleria</displayCond>
+									<label>LLL:EXT:bitsgallery/locallang_db.xml:flexform.frame_height</label>
+									<config>
+											<type>input</type>
+											<size>25</size>
+											<eval>trim</eval>
+									</config>
+							</TCEforms>
+					</frame_height>
+					<transition_speed>
+							<TCEforms>
+									<displayCond>FIELD:controller:!IN:galleria</displayCond>
+									<label>LLL:EXT:bitsgallery/locallang_db.xml:flexform.transition_speed</label>
+									<config>
+											<type>input</type>
+											<size>25</size>
+											<eval>trim</eval>
+									</config>
+							</TCEforms>
+					</transition_speed>
+					<easing>
+							<TCEforms>
+									<displayCond>FIELD:controller:!IN:galleria</displayCond>
+									<label>LLL:EXT:bitsgallery/locallang_db.xml:flexform.easing</label>
+									<config>
+											<type>input</type>
+											<size>25</size>
+											<eval>trim</eval>
+									</config>
+							</TCEforms>
+					</easing>
+					<transition_interval>
+							<TCEforms>
+									<displayCond>FIELD:controller:!IN:galleria</displayCond>
+									<label>LLL:EXT:bitsgallery/locallang_db.xml:flexform.transition_interval</label>
+									<config>
+											<type>input</type>
+											<size>25</size>
+											<eval>trim</eval>
+									</config>
+							</TCEforms>
+					</transition_interval>
+				</el>
+			</ROOT>
+		</mainSheet>
+	</sheets>
+</T3DataStructure>

@@ -1,0 +1,82 @@
+// setting the configurations
+temp.tx_bitsgallery {
+
+
+		panel_width = 800
+		panel_height = 300
+		frame_width = 50
+		frame_height = 50
+		transition_speed = 350
+		easing = easeInOutQuad
+		transition_interval = 0
+		nav_theme = light
+
+		
+		imgDirectory 				= {$plugins.bitsgallery.imgDirectory}
+		pathToTemplateDirectory 		= EXT:bitsgallery/templates
+		objectsStoragePid				=  23 
+		
+		
+		pathToTemplateDirectory 		= EXT:bitsgallery/templates
+		pathToLanguageFile 				= EXT:bitsgallery/locallang.xml
+		
+		
+		##
+		# Template files
+		#
+		##
+		
+		gallery = galleryview
+		galleryviewTemplate			= tmpl.galleryview.php
+		galleriaTemplate				= tmpl.galleria.php
+
+}
+
+
+
+# Includes
+includeLibs.tx_div = EXT:div/class.tx_div.php
+includeLibs.tx_lib_switch = EXT:lib/class.tx_lib_switch.php
+includeLibs.tx_bitsgallery_controllers_galleryview	 			= EXT:bitsgallery/controllers/class.tx_bitsgallery_controllers_galleryview.php
+includeLibs.tx_bitsgallery_controllers_galleria		 			= EXT:bitsgallery/controllers/class.tx_bitsgallery_controllers_galleria.php
+
+
+# The controller switch
+plugin.tx_bitsgallery.controllerSwitch = USER
+plugin.tx_bitsgallery.controllerSwitch{
+	userFunc = tx_lib_switch->main
+
+		// controller of the jquery galleryview script
+		galleryView = USER_INT
+		galleryView{ 
+			userFunc = tx_bitsgallery_controllers_galleryview->main
+				configurations < temp.tx_bitsgallery
+		}
+		
+		// controller of the jquery galleria script
+		galleria = USER_INT
+		galleria{ 
+			userFunc = tx_bitsgallery_controllers_galleria->main
+				configurations < temp.tx_bitsgallery
+		}
+}
+
+
+tt_content.list.20.tx_bitsgallery =< plugin.tx_bitsgallery.controllerSwitch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'vcommune'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pluginLabel">Video Searcher</label>
+			<label index="flexform.mainSheetTitle">Common settings</label>
+			<label index="flexform.rootPid">Root Pid</label>
+			
+			<label index="pluginLabel">bitsGallery</label>
+			<label index="tx_tupaja_objects.is_preview">Als Vorschau verwenden</label>
+			<label index="flexform.mainSheetTitle">Common settings</label>
+			<label index="flexform.chooseJsGallery">choose JS Gallery</label>
+			<label index="flexform.chooseJsGallery.galleryview">gallerieview (jquery)</label>
+			
+			
+			<label index="flexform.chooseMode">Modus Wählen</label>
+			<label index="flexform.chooseMode.directory">Bilder aus einem Verzeichnis laden</label>
+			<label index="flexform.chooseMode.records">Bilder aus der Datenbank laden</label>
+			<label index="flexform.imgDirectory">Verzeichnis</label>
+			
+			
+			<label index="flexform.controllerSelection">Gallery Controller</label>
+			<label index="flexform.controllerSelection.galleryView">galleryView(jquery)</label>
+			<label index="flexform.controllerSelection.galleria">galleria(jquery)</label>
+			<label index="flexform.choose.source">gallerieview (jquery)</label>
+
+			<label index="flexform.panel_width">panel_width: </label>
+			<label index="flexform.panel_height">panel_height: </label>
+			<label index="flexform.frame_width">frame_width: </label>
+			<label index="flexform.frame_height">frame_height: </label>
+			<label index="flexform.transition_speed">transition_speed: </label>
+			<label index="flexform.easing">easing: </label>
+			<label index="flexform.transition_interval">transition_interval: </label>
+
+			
+			
+			
+					
+		</languageKey>
+	</data>
+</T3locallang>
